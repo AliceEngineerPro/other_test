@@ -14,11 +14,11 @@ def write_file():
     if not os.path.exists(os.path.join(os.getcwd(), 'testing')):
         os.makedirs('testing')
 
-    for count in range(30):
+    for count in range(20):
         file_name = f'testing/python_file_{count}.py'
         with open(file=file_name, mode='w+', encoding='utf-8') as file:
             for _ in range(1000000):
-                if not os.path.getsize(filename=file_name) > 1024 * 100:
+                if not os.path.getsize(filename=file_name) > 1024 * 50:
                     file.write('print("I Love Python")\n')
                 else:
                     break
