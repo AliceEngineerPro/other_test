@@ -16,7 +16,7 @@ def write_file():
     if not os.path.exists(os.path.join(os.getcwd(), 'testing')):
         os.makedirs('testing')
 
-    for count in range(300):
+    for count in range(100):
         file_name = f'testing/python_file_{count}.py'
         with open(file=file_name, mode='w+', encoding='utf-8') as file:
             for _ in range(1000000):
